@@ -1,5 +1,5 @@
 # nonebot-plugin-tohochouqian
-128张东方存幻神签抽取nonebotbot小程序，支持选择签编号。（资源存在本地）
+128张东方幻存神签抽取nonebotbot小程序，支持选择签编号。（资源存在本地）
 
 抽签
 输入#chou或者#抽签可以抽一张东方幻存神签

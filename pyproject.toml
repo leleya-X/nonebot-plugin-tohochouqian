@@ -1,0 +1,53 @@
+[project]
+name = "nonebot-plugin-tohochouqian"
+version = "0.1.0"
+description = "NoneBot抽签插件,输入#chou或者#抽签可以抽一张东方幻存神签"
+authors = [
+    { name = "leleya-X", email = "xiao_leleya@163.com" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["nonebot", "plugin", "chouqian", "fortune","toho"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: NoneBot",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+dependencies = [
+    "nonebot2>=2.0.0",
+    "nonebot-adapter-onebot>=2.0.0",
+    "nonebot-plugin-saa>=0.5.0",
+    "openpyxl>=3.1.0",
+]
+
+[project.urls]
+homepage = "https://github.com/yourname/nonebot-plugin-tohochouqian"
+repository = "https://github.com/yourname/nonebot-plugin-tohochouqian"
+documentation = "https://github.com/yourname/nonebot-plugin-tohochouqian/blob/main/README.md"
+
+[build-system]
+requires = ["setuptools>=65.5", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.setuptools]
+package-dir = {"" = "nonebot_plugin_tohochouqian"}
+include-package-data = true
+zip-safe = false
+
+[tool.setuptools.packages.find]
+where = ["nonebot_plugin_tohochouqian"]
+
+
+[tool.setuptools.package-data]
+"nonebot_plugin_tohochouqian" = [
+    "trs.xlsx",
+    "chou/*.png",
+]
+
+
+[tool.nonebot]
+plugins = ["nonebot_plugin_tohochouqian"]
